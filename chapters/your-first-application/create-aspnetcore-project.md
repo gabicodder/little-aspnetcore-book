@@ -1,4 +1,5 @@
 # Crear un proyecto de ASP.NET Core
+
 Si todavía estas en el directorio creado para la aplicación Hello World, muévete a tu directorio Documentos o directorio inicial:
 
 ```text
@@ -37,6 +38,7 @@ En lugar de imprimir en la consola y salir, este programa inicia un servidor web
 Abre tu navegador web y navega a la dirección `http://localhost:5000`. Verás la pantalla de inicio predeterterminada de ASP.NET Core, lo cual significa que tu proyecto esta funcionando. Cuando termines presiona Contol-C en la terminal para detener el servidor.
 
 ## Las partes de un proyecto ASP.NET Core
+
 La plantilla `dotnet new mvc` genera un gran número de archivos y directorio por ti. Aquí están las cosas más importantes que obtienes fuera de la caja:
 
 * Los archivos **Program.cs** y **Startup.cs** configuraran el servidor web y la canalización de ASP.NET Core. La clase `Startup` es donde agregas el middleware que manipula y modifica los solicitudes de entrada y brindar cosas como archivos estáticos o páginas de errores. También en donde agregas tus propios servicios al contenedor de inyección de dependencias (posteriormente habrá más sobre esto).
@@ -65,7 +67,7 @@ Si estas usando Visual Studio Code por primera vez, aquí tienes un par de tips 
 
 > Estos tips también aplican para Visual Studio (sin Code) en Windows. Si estas usando Visual Studio, necesitaras abrir el archivo de proyecto directamente. Visual Studio te solicitara guardar el archivo de la solución, el cuál debes guardar en el directorio raíz de la solución (la primera carpeta llamado `AspNetCoreTodo`). También puedes crear un proyecto ASP.NET Core directamente o en Visual Studio usando la plantillas disponibles en Archivo - Nuevo Proyecto.
 
-### Una nota acerca de Git
+## Una nota acerca de Git
 
 Si usar Git o Github para manejar el control de código fuente, ahora es buen momento para hacer un `git init` e iniciar el repositorio en el directorio raíz del proyecto:
 
