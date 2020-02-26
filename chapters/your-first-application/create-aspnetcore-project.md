@@ -1,6 +1,6 @@
 # Crear un proyecto de ASP.NET Core
 
-Si todavía estas en el directorio creado para la aplicación Hello World, muévete a tu directorio Documentos o directorio inicial:
+Si todavía estas en el directorio creado para la aplicación Hola Mundo, muévete a tu directorio Documentos o directorio inicial:
 
 ```text
 cd ..
@@ -13,11 +13,11 @@ mkdir AspNetCoreTodo
 cd AspNetCoreTodo
 ```
 
-A continuación, crea un nuevo proyecto con `dotnet new`, esta vez utilizaras opciones adicionales:
+A continuación, crea un nuevo proyecto con el comando `dotnet new`, esta vez utilizaras opciones adicionales:
 
 ```text
 dotnet new mvc --auth Individual -o AspNetCoreTodo
-cd AspNetCoreTodo
+cd AspNetCoreTodo 
 ```
 
 Esto crea un nuevo proyecto usando la plantilla `mvc` y agrega al proyecto código adicional para la autenticación y seguridad (Cubrieré la seguridad en el capítulo _Seguridad e identidad_).
@@ -28,6 +28,18 @@ Verás unos pocos archivos en la carpeta del nuevo proyecto, Una vez que abres e
 
 ```text
 dotnet run
+
+info: Microsoft.Hosting.Lifetime[0]
+      Now listening on: https://localhost:5001
+info: Microsoft.Hosting.Lifetime[0]
+      Now listening on: http://localhost:5000
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\Users\benjaminc\Desktop\AspNetCoreTodo
+info: Microsoft.Hosting.Lifetime[0]
 
 Now listening on: http://localhost:5000
 Application started. Press Ctrl+C to shut down.
@@ -53,9 +65,9 @@ La plantilla `dotnet new mvc` genera un gran número de archivos y directorio po
 
 Si estas usando Visual Studio Code por primera vez, aquí tienes un par de tips de ayuda para iniciar:
 
-* **Abrir el directorio raíz del proyecto**: En Visual Studio Code, selecciona Archivo > Abrir carpeta. Si Visual Studio Code te solicita instalar los archivos pendientes, presionar clic en **Si** para agregarlos.
+* **Abrir el directorio raíz del proyecto**: En Visual Studio Code, selecciona _Archivo>Abrir carpeta_. Si Visual Studio Code te solicita instalar los archivos pendientes, presionar clic en **Si** para agregarlos.
 
-* **F5 para ejecutar (y puntos de interrupción de depuración)**: Con tu proyecto abierto, presiona F5 pra ejecutar el proyecto en el modo de depuración. Esto es lo mismo que ejecutar `dotnet run` en la linea de comandos, pero tienes el beneficio de configurar puntos de interrupción en tu código dando doble clic en el margen izquierdo:
+* **F5 para ejecutar (y puntos de interrupción de depuración)**: Con tu proyecto abierto, presiona **F5** pra ejecutar el proyecto en el modo de depuración. Esto es lo mismo que ejecutar `dotnet run` en la linea de comandos, pero tienes el beneficio de configurar puntos de interrupción en tu código dando doble clic en el margen izquierdo:
 
 ![Punto de interrupción en Visual Studio Code](breakpoint.png)
 
@@ -65,9 +77,9 @@ Si estas usando Visual Studio Code por primera vez, aquí tienes un par de tips 
 
 * **Compila rápidamente**: Usa el atajo `Command-Shift-B` o `Control-Shift-B` para ejecutar la tarea de Build run la cual realiza lo mismo que `dotnet build`.
 
-> Estos tips también aplican para Visual Studio (sin Code) en Windows. Si estas usando Visual Studio, necesitaras abrir el archivo de proyecto directamente. Visual Studio te solicitara guardar el archivo de la solución, el cuál debes guardar en el directorio raíz de la solución (la primera carpeta llamado `AspNetCoreTodo`). También puedes crear un proyecto ASP.NET Core directamente o en Visual Studio usando la plantillas disponibles en Archivo - Nuevo Proyecto.
+> Estos tips también aplican para Visual Studio 2019 para Windows. Si estas usando Visual Studio, necesitaras abrir el archivo de proyecto directamente. Visual Studio te solicitara guardar el archivo de la solución, el cuál debes guardar en el directorio raíz de la solución (la primera carpeta llamado `AspNetCoreTodo`). También puedes crear un proyecto ASP.NET Core directamente o en Visual Studio usando la plantillas disponibles en _Archivo>Nuevo Proyecto_.
 
-## Una nota acerca de Git
+## Control de código fuente : GIT
 
 Si usar Git o Github para manejar el control de código fuente, ahora es buen momento para hacer un `git init` e iniciar el repositorio en el directorio raíz del proyecto:
 
@@ -76,6 +88,14 @@ cd ..
 git init
 ```
 
-Asegúrate que agregues un archivo `.gitignore` que ignora las carpeta `bin` y `obj`. La plantilla de .gitignore para Visual Studio en el repositorio de Github funciona genial.
+Asegúrate que agregues un archivo `.gitignore` que ignora las carpeta `bin` y `obj`. La plantilla de .gitignore para Visual Studio en el repositorio de Github funciona genial. Desde la versión 3.0 el comando `dotnet new` incluye una plantilla para crear un archivo gitignore
+
+```text
+dotnet new gitignore
+```
 
 Hay mucho más que explorar, así que profundicemos e iniciemos a desarrollar una aplicación.
+
+```
+git commit -m "Versión inicial del proyecto"
+```

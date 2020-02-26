@@ -1,6 +1,6 @@
-## Hola Mundo en C# #
+## Hola Mundo en C#
 
-Antes de profundizar en ASP.NET Core, prueba creando y ejecutando una aplicación de C# simple.
+Antes de comenzar con ASP.NET Core, prueba creando y ejecutando una aplicación de consola con C# simple.
 
 Puedes hacer todo esto desde la línea de comandos. Primero, abre una Terminal (o PowerShell en Windows). Navega a la ubicación donde deseas guardar tus proyectos, tal cómo la carpeta de mis Documentos:
 
