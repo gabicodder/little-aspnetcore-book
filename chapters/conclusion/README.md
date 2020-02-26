@@ -1,13 +1,13 @@
 # Conclusión
 
-Gracias por llegar hasta el final de El pequeño libro de ASP.NET Core!. Si este fue útil (o no) me encantaría escuchar tus comentarios. Enviame tus comentarios vía Twitter:[https://twitter.com/nbarbettini](https://twitter.com/nbarbettini)
+Gracias por llegar hasta el final de El pequeño libro de ASP.NET Core!. Si este fue útil (o no) me encantaría escuchar tus comentarios. Enviame tus comentarios vía Twitter:[https://twitter.com/jbenjamincc](https://twitter.com/jbenjamincc)
 
 ## ¿Cómo aprender más?
 
 Hay muchos más que ASP.NET Core puede hacer que no pude incluir en este corto libro, incluyendo
 
 * Construir APIs RESTful y microservicios
-* Usar ASP.NET Core con aplicaciones de una sola páginas SPA) como angular y React
+* Usar ASP.NET Core con aplicaciones de una sola páginas SPA con Angular o React
 * Páginas Razor
 * Construir y minificar recursos estáticos
 * WebSockets y SignalR

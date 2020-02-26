@@ -10,7 +10,7 @@ Antes de comenzar, necesita tener instalada la CLI de Docker en su máquina de d
 docker version
 ```
 
-### Añadir un archivo docker
+### Añadir un archivo Dockerfile
 
 Lo primero que necesitará es un Dockerfile, que es como una receta que le dice a Docker lo que su aplicación necesita para compilar y ejecutar.
 

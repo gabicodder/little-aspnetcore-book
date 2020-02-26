@@ -1,9 +1,11 @@
 # Agregar paquetes externos
+
 Una de las grandes ventajas de usar un ecosistema maduro como .NET es que el número de paquetes y plugins de terceros es enorme. Al igual que otros sistemas de paquetes, puedes descargar e instalar paquetes .NET que te ayudaran con casi cualquier tarea o problema que puedas imaginar.
 
-NuGet es ambos, gestor de paquetes y el repositorio de paquetes oficial (en https://www.nuget.org). Puedes buscar paquetes en la web, e instalarlos desde tu máquina local a través de la terminal (o Interfaz gráfica, si estas usando Visual Studio).
+NuGet es ambos, gestor de paquetes y el repositorio de paquetes oficial en https://www.nuget.org . Puedes buscar paquetes en la web, e instalarlos desde tu máquina local a través de la terminal (o Interfaz gráfica, si estas usando Visual Studio).
 
 ## Instalar el paquete Humanizer
+
 El final del último capítulo, la aplicación de tareas mostraba las tareas de la siguiente manera:
 
 ![Fechas en formato ISO 8601](iso8601.png)
@@ -16,7 +18,7 @@ El paquete Humanizer en NuGet soluciona este problema proporcionado métodos que
 
 Para agregarlo a tu proyecto, ejecuta este comando en la terminal;
 
-```
+```bash
 dotnet add package Humanizer
 ```
 

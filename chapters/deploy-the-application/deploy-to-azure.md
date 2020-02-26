@@ -1,4 +1,4 @@
-## Desplegar en Azure
+# Desplegar en Azure
 
 La implementación de la aplicación de ASP.NET Core en Azure solo lleva unos pocos pasos. Puede hacerlo a través del portal web de Azure o en la línea de comandos utilizando la CLI de Azure. Voy a cubrir este último.
 
@@ -63,15 +63,14 @@ az webapp create -g AspNetCoreTodoGroup -p AspNetCoreTodoPlan -n MyTodoApp
 
 El nombre de la aplicación (`MyTodoApp` arriba) debe ser globalmente único en Azure. Una vez que se crea la aplicación, tendrá una URL predeterminada en el formato: http://mytodoapp.azurewebsites.net
 
-
-### Implementa tus archivos de proyecto en Azure
+## Implementa tus archivos de proyecto en Azure
 
 Puede usar Git para enviar sus archivos de aplicación a la aplicación web de Azure. Si su directorio local no ha sido inicializado como un repositorio de Git, ejecute estos comandos para configurarlo:
 
 ```
 git init
 git add .
-git commit -m "First commit!"
+git commit -m "Versión"
 ```
 
 A continuación, cree un nombre de usuario y contraseña de Azure para la implementación:
@@ -82,7 +81,7 @@ az webapp deployment user set --user-name nate
 
 Siga las instrucciones para crear una contraseña. Luego usa `config-local-git` para generar una URL de Git:
 
-```
+```bash
 az webapp deployment source config-local-git -g AspNetCoreTodoGroup -n MyTodoApp --out tsv
 
 https://nate@mytodoapp.scm.azurewebsites.net/MyTodoApp.git
@@ -90,13 +89,13 @@ https://nate@mytodoapp.scm.azurewebsites.net/MyTodoApp.git
 
 Copie la URL en el portapapeles y utilícela para agregar un control remoto Git a su repositorio local:
 
-```
+```bash
 git remoto add azure <paste>
 ```
 
 Solo necesitas hacer estos pasos una vez. Ahora, cuando quiera enviar sus archivos de aplicaciones a Azure, verifíquelos con Git y ejecute
 
-```
+```bash
 git push azure master
 ```
 

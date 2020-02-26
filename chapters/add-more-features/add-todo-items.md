@@ -1,4 +1,4 @@
-## Agregar nuevas tareas
+# Agregar nuevas tareas
 
 El usuario agregará nuevas tareas con un simple formulario abajo de la lista
 
@@ -10,7 +10,7 @@ Para agregar esta característica requieres algunos pasos:
 * Crear una nueva acción en el controlador para manipular el formulario.
 * Agregar código a la capa de servicio para actualizar la base de datos.
 
-### Agregar un formulario
+## Agregar un formulario
 
 La vista `Views/Todo/Index.cshtml` tiene un lugar asignado para el formulario para agregar elementos:
 
@@ -54,7 +54,7 @@ Esto toma responsabilidad de crear la vista parcial. Ahora, haz una referencia a
 </div>
 ```
 
-### Agregar una acción
+## Agregar una acción
 
 Cuando un usuario presiona el botón Add sobre el formulario que creaste, su navegador construirá un solicitud POST hacia `/Todo/AddItem` en tu aplicación. Que por el momento no funcionara, porque no hay una acción que pueda manejar la ruta `/Todo/AddItem`. Si intentas ahora, ASP.NET Core regresara un error `404 Not Found`
 
