@@ -1,4 +1,4 @@
-## Hola Mundo en C#
+# Hola Mundo en C#
 
 Antes de comenzar con ASP.NET Core, prueba creando y ejecutando una aplicación de consola con C# simple.
 
@@ -20,7 +20,7 @@ El comando `dotnet new` sirve para crear un nuevo proyecto de .NET Core. El par�
 cd HolaMundo
 ```
 
-`dotnet new console` crea un programa de C# básico que escribe el texto `Hello World!` en la pantalla. El programa esta compuesto por dos archivos: un archivo con extensión `.csproj` y un archivo con extensión `.cs`. El primero es conocido como el archivo del proyecto usa XML para definir algunos metadatos sobre el proyecto como que paquetes requiere, que versión del framework se usa.
+`dotnet new console` crea un programa de C# básico que escribe el texto `¡Hola Mundo!` en la pantalla. El programa esta compuesto por dos archivos: un archivo con extensión `.csproj` y un archivo con extensión `.cs`. El primero es conocido como el archivo del proyecto y usa XML para definir algunos metadatos sobre el proyecto como que paquetes requiere, que versión del framework se usa. El segunfo es el código fuente del programa
 
  Después, cuando agregues otros paquetes, estos serán listados aquí (de forma similar a un un archivo `package.json` para npm). No necesitarás editar esté archivo de forma manual muy seguido.Si abres el primer archivo en un editor de texto, veras esto :
 
@@ -50,7 +50,7 @@ namespace HolaMundo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Hola Mundo!");
         }
     }
 }

@@ -1,4 +1,5 @@
 # Crear modelos
+
 Hay dos clases modelo diferentes que necesitan ser creadas: un modelo que representa las tareas almacenadas en la base de datos (a veces llamadas **entidades**) y el modelo que será combinado con la vista (**MV** en MVC) y sera enviado al navegador del usuario. Debido a que ambos son referidos como modelos, prefiero referirme al último como **View Model**.
 
 Primero, crea un clase llamada `TodoItem` en la carpeta Models:

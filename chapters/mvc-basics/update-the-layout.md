@@ -1,4 +1,5 @@
-## Actualizar el layout
+# Actualizar el layout
+
 El archivo de layout en `Views/Shared/_Layout.cshtml` contiene el código HTML base para cada vista. Este incluye la barra de navegación, la cual es generada en la parte superior de cada página.
 
 Para agregar un nuevo elemento la barra de navegación, encuentra el código HTML para los elementos existentes de la barra de navegación.

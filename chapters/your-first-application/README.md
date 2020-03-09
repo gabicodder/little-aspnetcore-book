@@ -1,7 +1,6 @@
 # Tú primera aplicación
 
-¿Estas listo para crear tú primera aplicación web con ASP.NET Core? Primero, tendrás que conseguir algunas cosas:
-Los programas básicos que necesitas para iniciar es el kit de desarollador de software o SDK .NET Core y un editor de textos. Aunque con estas herramientas puedes crear aplicaciones completamente funcionales tengo que aclarar que el el mundo real existen programas especializados conocidos como Entornos de Desarollo Integrado como son [Visual Studio de Microsoft](https://visualstudio.microsoft.com/) o [Rider de JetBrains](https://www.jetbrains.com/es-es/rider/).
+¿Estas listo para crear tú primera aplicación web con ASP.NET Core? Primero, tendrás que conseguir los programas básicos que necesitas para iniciar es el kit de desarollador de software o SDK de .NET Core y un editor de textos. Aunque con estas herramientas puedes crear aplicaciones completamente funcionales tengo que aclarar que en el mundo real existen programas especializados conocidos como Entornos de Desarollo Integrado o IDE por sus siglas en inglés. Ejemplos de IDEs son [Visual Studio de Microsoft](https://visualstudio.microsoft.com/) o [Rider de JetBrains](https://www.jetbrains.com/es-es/rider/).
 
 El SDK puede ser instalado en Windows, Mac o Linux.
 Independiente de la plataforma o editor que estas usando, necesitaras instalar el SDK

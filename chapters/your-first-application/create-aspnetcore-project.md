@@ -81,7 +81,7 @@ Si estas usando Visual Studio Code por primera vez, aquí tienes un par de tips 
 
 ## Control de código fuente : GIT
 
-Si usar Git o Github para manejar el control de código fuente, ahora es buen momento para hacer un `git init` e iniciar el repositorio en el directorio raíz del proyecto:
+Si usas Git o Github para manejar el control de código fuente, ahora es buen momento para hacer un `git init` e iniciar el repositorio en el directorio raíz del proyecto:
 
 ```text
 cd ..

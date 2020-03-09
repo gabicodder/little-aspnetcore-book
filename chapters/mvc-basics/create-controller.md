@@ -1,4 +1,5 @@
 # Crear un controlador
+
 Actualmente ya hay algunos controladores en la carpeta Controllers, incluyendo `HomeController` que generá la pantalla de bienvenida por defautl cuando visitas `http://localhost:5000`. Puedes ignorar estos controladores por ahora.
 
 Crea un nuevo controlador para la funcionalidad de la lista de tareas y agrega el siguiente código:
@@ -29,7 +30,7 @@ localhost:5000/Home/About   -> About()
 localhost:5000/Home/Contact -> Contact()
 ```
 
-Hay un gran número de convenciones (patrones comunes) usados por ASP.NET Core, tales como patrón que `FooController` se convierte en `/Foo`, y la acción `Index` puede ser omitida de la URL. Puedes personalizar este comportamiento si así lo deseas, pero por ahora, usaremos las convenciones predefinidas.
+Hay un gran número de convenciones usados por ASP.NET Core, tales como patrón que `FooController` se convierte en `/Foo`, y la acción `Index` puede ser omitida de la URL. Puedes personalizar este comportamiento si así lo deseas, pero por ahora, usaremos las convenciones predefinidas.
 
 Agrega un nueva acción llamada `Index` al `TodoController`, remplazando el comentario `// Las acciones van aquí`;
 
