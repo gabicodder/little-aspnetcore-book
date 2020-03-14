@@ -1,8 +1,8 @@
-# Agregar paquetes externos
+# Agregar paquetes externos con NuGet
 
-Una de las grandes ventajas de usar un ecosistema maduro como .NET es que el número de paquetes y plugins de terceros es enorme. Al igual que otros sistemas de paquetes, puedes descargar e instalar paquetes .NET que te ayudaran con casi cualquier tarea o problema que puedas imaginar.
+Una de las grandes ventajas de usar un ecosistema maduro como .NET Core es que el número de paquetes y librerias de terceros es enorme. Al igual que otros manejadores de paquetes, puedes descargar e instalar paquetes para .NET que te ayudaran con casi cualquier tarea o problema que puedas imaginar.
 
-NuGet es ambos, gestor de paquetes y el repositorio de paquetes oficial en https://www.nuget.org . Puedes buscar paquetes en la web, e instalarlos desde tu máquina local a través de la terminal (o Interfaz gráfica, si estas usando Visual Studio).
+NuGet esta compuesto por tres componentes el gestor de paquetes, el cliente de NuGet y la galería de NuGet https://www.nuget.org . Puedes buscar paquetes en la web, e instalarlos desde tu máquina local a través de la terminal (o Interfaz gráfica, si estas usando Visual Studio).
 
 ## Instalar el paquete Humanizer
 
@@ -24,11 +24,11 @@ dotnet add package Humanizer
 
 Si das una ojeada en el archivo del proyecto `AspNetCoreTodo.csproj` veras una nueva línea `PackageReference` que hace referencia a `Humanizer`.
 
-## Usar Humanizer en la vista
+### Usar Humanizer en la vista
 
 Para usar un paquete en tu código, usualmente tienes que agregar un enunciado `using` que importa el paquete al principio del archivo
 
-Debido a que Humanizar será usado para reescribir las fechas mostradas en la vista, puedes usarlo directamente en las vistas misma. Primero añade un enunciado `@using` al principio de la vista.
+Debido a que Humanizar será usado para reescribir las fechas mostradas en la vista, puedes usarlo directamente en las vistas misma. Primero añade la directiva `@using` al principio de la vista.
 
 **Views/Todo/Index.cshtml**
 

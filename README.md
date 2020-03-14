@@ -2,9 +2,9 @@
 
 *Por Nate Barbettini y Benjamín Camacho*
 
-Copyright © 2018. Todos los derechos reservados.
+Copyright © 2020. Todos los derechos reservados.
 
-ISBN: 978-1-387-75615-5
+ISBN: 
 
 Liberado bajo la licencia Creative Commons Attribution 4.0. Eres libre de compartir, copiar y redistribuir este libro en cualquier formato o mezclarlo y transformarlo para cualquier propósito \(incluso comercialmente\). Debes de dar el crédito apropiado y proveer la liga a la licencia.
 
@@ -12,9 +12,11 @@ Visita [https://creativecommons.org/licenses/by/4.0/deed.es](https://creativecom
 
 ## Introducción
 
-¡Gracias por elegir El pequeño libro de ASP.NET Core! Escribí este corto libro para ayudar a los desarrolladores y personas interesadas en aprender programación web a aprender acerca de ASP.NET Core, un marco de trabajo para desarrollar aplicaciones web y APIs.
+¡Gracias por elegir _ASP.NET Core: manual de practicas_! Escribí este corto libro basado en el trabajo de Nate Barbetini y con el proposito de ayudar a las personas de habla hispana que interesadas en aprender programación web a aprender como desarrollar aplicaciones web ASP.NET Core
 
-El pequeño libro de ASP.NET Core está estructurado como un tutorial. Construirás una aplicación de principio a fin y con ello aprenderás:
+, un marco de trabajo para desarrollar aplicaciones web y APIs.
+
+_ASP.NET Core: manual de practicas_ está estructurado como un tutorial. Construirás una aplicación de principio a fin y con ello aprenderás:
 
 * Los fundamentos del patrón MVC (Modelo-Vista-Controlador)
 * Cómo funciona el código del lado del cliente (HTML, CSS y Javascript) junto con el código del lado del servidor.
@@ -23,7 +25,7 @@ El pequeño libro de ASP.NET Core está estructurado como un tutorial. Construir
 * Cómo agregar inicio de sesión, registro y seguridad
 * Cómo desplegar la aplicación en la web
 
-No te preocupes, para iniciar no necesitas conocer nada sobre ASP.NET Core (o algo de lo anterior).
+No te preocupes, para iniciar no necesitas ser un experto en desarrollo web pero si es necesario tener conocimientos básicos en C#, HTML CSS, Javascript y SQL.
 
 ## Antes de empezar
 
@@ -33,13 +35,13 @@ El código de la versión final de la aplicación que construirás está disponi
 
 Siéntete libre de descargarlo si quieres ver el producto final, o compararlo mientras escribes tú propio código.
 
-El libro mismo es actualizado frecuentemente con corrección de errores y adición de nuevo contenido. Si estas leyendo un archivo PDF, libro electrónico o versión impresa verifica el sitio web oficial ([http://aspnetcoremaster.com/little-aspnetcore-book/](http://aspnetcoremaster.com/little-aspnetcore-book/)) para ver si hay disponible una versión actualizada. La última página del libro contiene información sobre la versión y el registro de cambios.
+El libro mismo es actualizado frecuentemente con corrección de errores y adición de nuevo contenido. Si estas leyendo un archivo PDF, libro electrónico o versión impresa verifica el sitio web oficial ([http://aspnetcoremaster.com/](http://aspnetcoremaster.com/)) para ver si hay disponible una versión actualizada. La última página del libro contiene información sobre la versión y el registro de cambios.
 
 ## ¿A quién está dirigido este libro?
 
 Si eres nuevo en la programación web, esté libro te introducirá los patrones y conceptos utilizados para desarrollar aplicaciones web modernas. Aprenderás como construir una aplicación web (y cómo se ensamblan todas las piezas) ¡construyendo algo desde el inicio! A pesar de que este pequeño libro no es capaz de cubrir absolutamente todo lo que necesitas conocer acerca de la programación te dará un punto de inicio de tal forma que puedas aprender tópicos más avanzados.
 
-Si ya haz programado en un lenguaje de lado del servidor como Javascript con Node Python, Ruby, Go o Java encontrarás muchas ideas familiares como MVC, plantillas de vistas e inyección de dependencias. El código estará en el lenguaje de programación C#, pero no lucirá tan diferente de lo que ya conoces. Si eres un desarollador ASP.NET MVC, ¡te sentirás como en casa! ASP.NET Core añade algunas nuevas herramientas y reutiliza (y simplifica) las cosas que ya conoces. Apuntaré sobre algunas diferencias a continuación.
+Si ya haz programado con un lenguaje de lado del servidor como Javascript con Node,Python, Ruby, Go o Java encontrarás muchas ideas familiares como MVC, plantillas de vistas e inyección de dependencias. El código estará en el lenguaje de programación C#, pero no lucirá tan diferente de lo que ya conoces. Si eres un desarollador ASP.NET MVC, ¡te sentirás como en casa! ASP.NET Core añade algunas nuevas herramientas y reutiliza (y simplifica) las cosas que ya conoces. Apuntaré sobre algunas diferencias a continuación.
 
 No importa tú experiencia previa con la programación web, este libro te enseñará todo lo necesario para crear una aplicación web ASP.NET Core simple y útil. Aprenderás como desarrollar las funcionalidades usando el código del lado del servidor y del cliente. Cómo interactuar con una base de datos y cómo desplegar la aplicación en un servidor real.
 
@@ -47,11 +49,11 @@ No importa tú experiencia previa con la programación web, este libro te enseñ
 
 ASP.NET Core es un marco de trabajo web creado por Microsoft para desarrollar aplicaciones web, APIs y microservicios. Usa patrones de diseño bien conocidos como MVC (Modelo-Vista-Controlador), la inyección de dependencias y una canalización de solicitudes formada por Middleware. Es de código abierto bajo la [licencia Apache 2.0](https://github.com/dotnet/aspnetcore/blob/master/LICENSE.txt), lo que significa que está disponible de forma gratuita y la comunidad es animada para contribuir con corrección de errores y adición nuevas características.
 
-ASP.NET Core se ejecuta sobre el entorno de ejecución .NET de Microsoft, similar a la Máquina Virtual de Java (JVM) o el intérprete de Ruby. En teoría puedes escribir aplicaciones ASP.NET Core en varios de lenguajes de programación (entre ellos C#, Visual Basic y F#) pero en la realidad C# es la elección más popular y el que cuenta con un conjunto de plantillas más completo por tal motivo C# es el lenguaje que que usaremos en este libro. Puedes desarrollar y ejecutar aplicaciones ASP.NET Core en los sistemas operativos Windows, Mac y Linux.
+ASP.NET Core se ejecuta sobre el entorno de ejecución .NET de Microsoft. En teoría puedes escribir aplicaciones ASP.NET Core en varios de lenguajes de programación (entre ellos C#, Visual Basic y F#) pero en la realidad C# es la elección más popular y el que cuenta con un conjunto de plantillas más completo por tal motivo C# es el lenguaje que que usaremos en este libro. Puedes desarrollar y ejecutar aplicaciones ASP.NET Core en los sistemas operativos Windows, Mac y Linux.
 
 ## ¿Porqué necesitamos otro marco de trabajo para el desarollo web?
 
-Al día de hoy, existen gran cantidad de marcos de trabajo web para elegir : Node/Express, Spring, Ruby on Rails, Django, Laravel y muchos más. ¿Cuáles son las ventajas que ASP.NET Core tiene?
+Al día de hoy, existen gran cantidad de marcos de trabajo web para elegir : Express, Spring, Ruby on Rails, Django, Laravel y muchos más. ¿Cuáles son las ventajas que ASP.NET Core tiene?
 
 * **Rapidez.** ASP.NET Core es rápido. Debido a que el código .NET es compilado, este se ejecuta mucho más rápido que el código de lenguajes interpretados como Javascript o Ruby. ASP.NET Core también esta optimizada para multihilos y tareas asíncronas. Es común ver una mejora en la rapidez de 5-10x sobre el código escrito en Node.js.
 
